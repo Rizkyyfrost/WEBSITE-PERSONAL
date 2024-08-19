@@ -16,7 +16,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
 
         .profile-img {
@@ -82,6 +82,7 @@
             display: flex;
             gap: 10px;
             justify-content: center;
+            margin-bottom: 20px;
         }
 
         .action-buttons a {
@@ -100,6 +101,61 @@
         .action-buttons a:nth-child(3) {
             background-color: #636e72;
         }
+
+        /* Styles for Kemampuan Section */
+        .experience-section {
+            background-color: #222;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .experience-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #e74c3c; /* Ubah warna menjadi merah */
+        }
+
+        .experience-category {
+            margin-bottom: 20px;
+        }
+
+        .experience-category h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .experience-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .experience-list li {
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+        }
+
+        .experience-list li .skill-name {
+            flex: 1;
+            text-align: left;
+        }
+
+        .experience-list li .experience-level {
+            flex-shrink: 0;
+            font-size: 14px;
+            color: #ddd;
+            margin-left: 20px;
+        }
     </style>
 </head>
 <body>
@@ -115,11 +171,11 @@
 
     <div class="stats">
         <div>
-            <h3>2 Tahun</h3>
+            <h3>3 Tahun</h3>
             <p>Experience</p>
         </div>
         <div>
-            <h3>9 Proyek</h3>
+            <h3>5 Proyek</h3>
             <p>Terselesaikan</p>
         </div>
     </div>
@@ -127,6 +183,33 @@
     <div class="action-buttons">
         <a href="#">Resume</a>
         <a href="#">Portfolio</a>
+    </div>
+
+    <!-- Kemampuan Section -->
+    <div class="experience-section">
+        <h2>Kemampuan</h2>
+        
+        <div class="experience-category">
+            <h3>Frontend Development</h3>
+            <ul class="experience-list">
+                <li><span class="skill-name">HTML</span> <span class="experience-level">Experienced</span></li>
+                <li><span class="skill-name">CSS</span> <span class="experience-level">Experienced</span></li>
+                <li><span class="skill-name">SASS</span> <span class="experience-level">Intermediate</span></li>
+                <li><span class="skill-name">JavaScript</span> <span class="experience-level">Basic</span></li>
+                <li><span class="skill-name">TypeScript</span> <span class="experience-level">Basic</span></li>
+                <li><span class="skill-name">Material UI</span> <span class="experience-level">Intermediate</span></li>
+            </ul>
+        </div>
+        
+        <div class="experience-category">
+            <h3>Backend Development</h3>
+            <ul class="experience-list">
+                <li><span class="skill-name">PostgreSQL</span> <span class="experience-level">Basic</span></li>
+                <li><span class="skill-name">Node JS</span> <span class="experience-level">Intermediate</span></li>
+                <li><span class="skill-name">Express JS</span> <span class="experience-level">Intermediate</span></li>
+                <li><span class="skill-name">Git</span> <span class="experience-level">Intermediate</span></li>
+            </ul>
+        </div>
     </div>
 
 </body>
