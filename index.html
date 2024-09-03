@@ -60,6 +60,25 @@
             color: #1e1e1e;
         }
 
+        /* Efek mengetik */
+        .typing-effect {
+            border-right: .15em solid #1e1e1e; /* Warna kursor */
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0; /* Lebar awal efek mengetik */
+            animation: typing 3.5s steps(30, end) forwards, blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #1e1e1e; }
+        }
+
         .hero p {
             font-size: 18px;
             color: #333333;
@@ -217,7 +236,7 @@
         <section class="hero">
             <!-- Menampilkan gambar profile dengan nama profiles.jpg -->
             <img src="profiles.jpg" alt="Profile Picture">
-            <h2>RIZKY MAULANA</h2>
+            <h2 class="typing-effect">RIZKY MAULANA</h2>
             <p>Saya membuat dan merancang program berdasarkan pengalaman sederhana saya, mari semarakkan digitalisasi sekarang</p>
             <a href="https://www.instagram.com/cynanoverse" class="cta-button">Explore Now</a>
         </section>
