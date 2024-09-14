@@ -48,7 +48,7 @@
         }
 
         .hero img {
-            border-radius: 50%; /* Membuat gambar menjadi bulat */
+            border-radius: 50%;
             width: 150px;
             height: 150px;
             object-fit: cover;
@@ -60,12 +60,11 @@
             color: #1e1e1e;
         }
 
-        /* Efek mengetik */
         .typing-effect {
-            border-right: .15em solid #1e1e1e; /* Warna kursor */
+            border-right: .15em solid #1e1e1e;
             white-space: nowrap;
             overflow: hidden;
-            width: 0; /* Lebar awal efek mengetik */
+            width: 0;
             animation: typing 3.5s steps(30, end) forwards, blink-caret .75s step-end infinite;
         }
 
@@ -108,7 +107,6 @@
             font-size: 14px;
         }
 
-        /* Kemampuan Section Styles */
         .experience-section {
             background-color: #f5c518;
             padding: 20px;
@@ -146,7 +144,29 @@
             float: right;
         }
 
-        /* Responsive Styles */
+        .certification-section {
+            background-color: #2d3c4d;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .certification-section h2 {
+            color: #f5c518;
+            margin-bottom: 20px;
+        }
+
+        .certification-section p {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .certification-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
         @media (max-width: 768px) {
             .header {
                 flex-direction: column;
@@ -234,8 +254,7 @@
 
         <!-- Hero Section -->
         <section class="hero">
-            <!-- Menampilkan gambar profile dengan nama profiles.jpg -->
-            <img src="profiles.jpg" alt="Profile Picture">
+            <img src="profile.jpg" alt="Profile Picture">
             <h2 class="typing-effect">RIZKY MAULANA</h2>
             <p>Saya membuat dan merancang program berdasarkan pengalaman sederhana saya, mari semarakkan digitalisasi sekarang</p>
             <a href="https://www.instagram.com/cynanoverse" class="cta-button">Explore Now</a>
@@ -266,6 +285,13 @@
                     <li><span class="skill-name">Git</span> <span class="experience-level">Intermediate</span></li>
                 </ul>
             </div>
+        </div>
+
+        <!-- Sertifikasi Section -->
+        <div class="certification-section">
+            <h2>Sertifikasi</h2>
+            <p>Sertifikat Kompetensi Kelulusan</p>
+            <img src="sertifikat.jpg" alt="Sertifikat">
         </div>
 
         <!-- Footer -->
