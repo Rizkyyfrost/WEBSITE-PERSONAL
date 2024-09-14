@@ -26,10 +26,14 @@ body {
 }
 
 .header nav a {
-    color: #ffffff;
+    color: #f5c518; /* Warna kuning untuk link */
     text-decoration: none;
     margin-left: 20px;
     font-size: 18px;
+}
+
+.header nav a:hover {
+    color: #ffffff; /* Warna hover menjadi putih */
 }
 
 .hero {
@@ -38,6 +42,7 @@ body {
     text-align: center;
     border-radius: 10px;
     margin-bottom: 20px;
+    margin-top: 20px; /* Menambahkan jarak antara header dan hero */
 }
 
 .hero img {
