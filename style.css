@@ -1,4 +1,3 @@
-/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #1e1e1e;
@@ -33,7 +32,7 @@ body {
     font-size: 18px;
 }
 
-/* About and Contact positioning */
+/* Tambahan untuk menempatkan "About" dan "Contact" di bawah judul */
 .my-experience {
     margin-top: 20px;
 }
@@ -46,15 +45,14 @@ body {
 }
 
 .my-experience nav a {
-    color: #f5c518; /* Yellow color */
+    color: #f5c518; /* Warna kuning */
     text-decoration: none;
 }
 
 .my-experience nav a:hover {
-    color: #ffffff; /* Hover effect */
+    color: #ffffff; /* Warna hover putih */
 }
 
-/* Hero Section */
 .hero {
     background-color: #f5c518;
     padding: 40px;
@@ -111,7 +109,6 @@ body {
     font-size: 18px;
 }
 
-/* Footer */
 .footer {
     text-align: center;
     padding: 20px;
@@ -125,7 +122,6 @@ body {
     font-size: 14px;
 }
 
-/* Experience Section */
 .experience-section {
     background-color: #f5c518;
     padding: 20px;
@@ -163,13 +159,11 @@ body {
     float: right;
 }
 
-/* Sertifikat Styling */
 .certification-section {
     background-color: #2d3c4d;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    text-align: center;
 }
 
 .certification-section h2 {
@@ -188,46 +182,6 @@ body {
     border-radius: 10px;
 }
 
-/* Desain Sertifikat yang Mirip Contoh */
-.achievement-section {
-    background-color: #1E1E2E; /* Background color */
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    color: white;
-    max-width: 400px;
-    margin: 20px auto;
-}
-
-.status {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.circle {
-    width: 16px;
-    height: 16px;
-    background-color: #8B00FF; /* Purple color */
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.status p {
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0;
-}
-
-.achievement-section h2 {
-    font-size: 20px;
-    color: white;
-    margin: 0;
-}
-
-/* Responsive Styling */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -271,10 +225,6 @@ body {
     .experience-list li {
         font-size: 14px;
     }
-
-    .achievement-section {
-        padding: 15px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -300,9 +250,5 @@ body {
 
     .experience-list li {
         font-size: 12px;
-    }
-
-    .achievement-section {
-        padding: 10px;
     }
 }
