@@ -1,0 +1,14 @@
+.certification-section {
+    background-color: #2d3c4d;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.certification-section img {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
