@@ -4,6 +4,7 @@
     border-radius: 10px;
     margin-bottom: 20px;
     text-align: center;
+    animation: fadeIn 1.5s ease-in-out; /* Animasi fade-in */
 }
 
 .certification-section img {
@@ -11,4 +12,16 @@
     height: auto;
     margin-top: 20px;
     border-radius: 10px;
+    animation: slideIn 2s ease-out; /* Animasi slide-in */
+}
+
+/* Keyframes untuk animasi */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
 }
