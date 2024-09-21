@@ -3,83 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - RIZKY MAULANA</title>
+    <title>Portfolio - RIZKYDEV</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
-
+        
         <!-- Header -->
         <header class="header">
-            <div class="logo">
-                <!-- Logo image and text -->
-                <img src="logo.png" alt="Logo" class="logo-img">
-                <h1>RIZKYDEV</h1>
-            </div>
-
-            <div class="controls">
-                <!-- Dark Mode Toggle Switch -->
-                <label class="switch">
-                    <input type="checkbox" id="theme-toggle">
-                    <span class="slider"></span>
-                </label>
-                
-                <!-- Additional icons -->
-                <img src="share-icon.png" alt="Share" class="icon">
-                <img src="other-icon.png" alt="Other" class="icon">
-            </div>
+            <h1>RIZKYDEV</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </header>
 
         <!-- Hero Section -->
         <section class="hero">
             <img src="profile.jpg" alt="Profile Picture">
             <h2 class="typing-effect">RIZKY MAULANA</h2>
-            <p>Selamat datang di portofolio saya, saya adalah seorang pelajar yang memadukan teknologi rekayasa dengan inovasi disetiap karya yang saya buat.</p>
+            <p>Selamat datang di portofolio saya, saya seorang pelajar yang memadukan teknologi dengan inovasi.</p>
             <a href="https://www.instagram.com/cynanoverse" class="cta-button">Explore Now</a>
         </section>
 
-        <!-- Kemampuan Section -->
-        <div class="experience-section">
+        <!-- My Experience -->
+        <section class="my-experience" id="experience">
             <h2>Kemampuan</h2>
-            
-            <div class="experience-category">
+            <nav>
+                <a href="#frontend">Frontend Development</a>
+                <a href="#backend">Backend Development</a>
+            </nav>
+
+            <!-- Frontend Skills -->
+            <div class="experience-category" id="frontend">
                 <h3>Frontend Development</h3>
                 <ul class="experience-list">
                     <li><span class="skill-name">HTML</span> <span class="experience-level">Experienced</span></li>
                     <li><span class="skill-name">CSS</span> <span class="experience-level">Experienced</span></li>
-                    <li><span class="skill-name">SASS</span> <span class="experience-level">Intermediate</span></li>
                     <li><span class="skill-name">JavaScript</span> <span class="experience-level">Basic</span></li>
-                    <li><span class="skill-name">TypeScript</span> <span class="experience-level">Basic</span></li>
-                    <li><span class="skill-name">Material UI</span> <span class="experience-level">Intermediate</span></li>
                 </ul>
             </div>
-            
-            <div class="experience-category">
+
+            <!-- Backend Skills -->
+            <div class="experience-category" id="backend">
                 <h3>Backend Development</h3>
                 <ul class="experience-list">
+                    <li><span class="skill-name">Node.js</span> <span class="experience-level">Intermediate</span></li>
                     <li><span class="skill-name">PostgreSQL</span> <span class="experience-level">Basic</span></li>
-                    <li><span class="skill-name">Node JS</span> <span class="experience-level">Intermediate</span></li>
-                    <li><span class="skill-name">Express JS</span> <span class="experience-level">Intermediate</span></li>
-                    <li><span class="skill-name">Git</span> <span class="experience-level">Intermediate</span></li>
                 </ul>
             </div>
-        </div>
+        </section>
 
-        <!-- Sertifikasi Section -->
-        <div class="certification-section">
+        <!-- Certification Section -->
+        <section class="certification-section">
             <h2>Sertifikasi</h2>
-            <p>Academy Google Development</p>
             <img src="sertifikat.jpg" alt="Sertifikat">
-        </div>
+        </section>
 
         <!-- Footer -->
         <footer class="footer">
-            <p>@Rizkyfrostreserved</p>
+            <p>&copy; 2024 RIZKYDEV. All Rights Reserved.</p>
         </footer>
-
     </div>
 
     <script src="script.js"></script>
 </body>
-            </html>
+</html>
