@@ -159,6 +159,14 @@ body {
     float: right;
 }
 
+/* Gambar TypeScript */
+.typescript-logo {
+    width: 20px; /* Atur ukuran logo */
+    height: auto;
+    vertical-align: middle; /* Agar sejajar dengan teks */
+    margin-right: 10px; /* Memberi jarak antara logo dan teks */
+}
+
 .certification-section {
     background-color: #2d3c4d;
     padding: 20px;
@@ -244,11 +252,4 @@ body {
         font-size: 14px;
     }
 
-    .experience-category h3 {
-        font-size: 16px;
-    }
-
-    .experience-list li {
-        font-size: 12px;
-    }
-}
+    .experience-category h3
