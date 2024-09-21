@@ -155,16 +155,15 @@ body {
     color: #f5c518;
 }
 
-.experience-level {
-    float: right;
+.skill-name img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
-/* Gambar TypeScript */
-.typescript-logo {
-    width: 20px; /* Atur ukuran logo */
-    height: auto;
-    vertical-align: middle; /* Agar sejajar dengan teks */
-    margin-right: 10px; /* Memberi jarak antara logo dan teks */
+.experience-level {
+    float: right;
 }
 
 .certification-section {
@@ -249,7 +248,3 @@ body {
     }
 
     .cta-button {
-        font-size: 14px;
-    }
-
-    .experience-category h3
