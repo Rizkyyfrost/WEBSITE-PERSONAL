@@ -1,7 +1,8 @@
+/* General styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #1e1e1e;
-    color: #ffffff;
+    background-color: #f0f4f8;
+    color: #1e1e1e;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -13,53 +14,97 @@ body {
     padding: 20px;
 }
 
+/* Header Styling */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    background-color: #f0f4f8;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
 }
 
 .header h1 {
     font-size: 24px;
-    color: #f5c518;
+    color: #1e90ff;
+    font-weight: bold;
 }
 
-.header nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 18px;
-}
-
-/* Tambahan untuk menempatkan "About" dan "Contact" di bawah judul */
-.my-experience {
-    margin-top: 20px;
-}
-
-.my-experience nav {
+/* Control icons and switch */
+.controls {
     display: flex;
-    justify-content: flex-start;
-    gap: 15px;
-    margin-bottom: 20px;
+    align-items: center;
 }
 
-.my-experience nav a {
-    color: #f5c518; /* Warna kuning */
-    text-decoration: none;
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
 }
 
-.my-experience nav a:hover {
-    color: #ffffff; /* Warna hover putih */
+/* Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
 
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #1e90ff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Hero Section */
 .hero {
     background-color: #f5c518;
     padding: 40px;
     text-align: center;
     border-radius: 10px;
     margin-bottom: 20px;
-    margin-top: 20px;
 }
 
 .hero img {
@@ -73,24 +118,6 @@ body {
     font-size: 36px;
     margin: 20px 0;
     color: #1e1e1e;
-}
-
-.typing-effect {
-    border-right: .15em solid #1e1e1e;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0;
-    animation: typing 3.5s steps(30, end) forwards, blink-caret .75s step-end infinite;
-}
-
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: #1e1e1e; }
 }
 
 .hero p {
@@ -109,19 +136,7 @@ body {
     font-size: 18px;
 }
 
-.footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333333;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-.footer p {
-    margin: 0;
-    font-size: 14px;
-}
-
+/* Experience Section */
 .experience-section {
     background-color: #f5c518;
     padding: 20px;
@@ -149,60 +164,24 @@ body {
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
-}
-
-.skill-name {
     color: #f5c518;
 }
 
-.skill-name img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-.experience-level {
-    float: right;
-}
-
-.certification-section {
-    background-color: #2d3c4d;
+/* Footer */
+.footer {
+    text-align: center;
     padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.certification-section h2 {
-    color: #f5c518;
-    margin-bottom: 20px;
-}
-
-.certification-section p {
+    background-color: #333333;
     color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.certification-section img {
-    width: 100%;
-    height: auto;
     border-radius: 10px;
+    margin-top: 20px;
 }
 
+/* Responsive Styling */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    .header h1 {
-        margin-bottom: 10px;
-    }
-
-    .header nav a {
-        margin-left: 0;
-        margin-right: 20px;
-        font-size: 16px;
     }
 
     .hero {
@@ -216,38 +195,4 @@ body {
     .hero p {
         font-size: 16px;
     }
-
-    .cta-button {
-        font-size: 16px;
-    }
-
-    .experience-section {
-        padding: 10px;
-    }
-
-    .experience-category h3 {
-        font-size: 18px;
-    }
-
-    .experience-list li {
-        font-size: 14px;
-    }
 }
-
-@media (max-width: 480px) {
-    .header nav a {
-        font-size: 14px;
-    }
-
-    .hero h2 {
-        font-size: 24px;
-    }
-
-    .hero p {
-        font-size: 14px;
-    }
-
-    .cta-button {
-        font-size: 14px;
-    }
-        }
