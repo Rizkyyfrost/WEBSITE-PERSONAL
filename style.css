@@ -1,250 +1,76 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #1e1e1e;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - RIZKY MAULANA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+    <div class="container">
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-}
+        <!-- Header -->
+        <header class="header">
+            <h1>My Experience</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
 
-.header h1 {
-    font-size: 24px;
-    color: #f5c518;
-}
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="profile.jpg" alt="Profile Picture">
+            <h2 class="typing-effect">RIZKY MAULANA</h2>
+            <p>Selamat datang di portofolio saya, saya adalah seorang pelajar yang memadukan teknologi rekayasa dengan inovasi disetiap karya yang saya buat.</p>
+            <a href="https://www.instagram.com/cynanoverse" class="cta-button">Explore Now</a>
+        </section>
 
-.header nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 18px;
-}
+        <!-- Kemampuan Section -->
+        <div class="experience-section">
+            <h2>Kemampuan</h2>
+            
+            <div class="experience-category">
+                <h3>Frontend Development</h3>
+                <ul class="experience-list">
+                    <li><span class="skill-name"><img src="html.png" alt="HTML Logo"> HTML</span> <span class="experience-level">Experienced</span></li>
+                    <li><span class="skill-name"><img src="css3.png" alt="CSS Logo"> CSS</span> <span class="experience-level">Experienced</span></li>
+                    <li><span class="skill-name"><img src="sass.png" alt="SASS Logo"> SASS</span> <span class="experience-level">Intermediate</span></li>
+                    <li><span class="skill-name"><img src="js.png" alt="JavaScript Logo"> JavaScript</span> <span class="experience-level">Basic</span></li>
+                    <li><span class="skill-name"><img src="ts.png" alt="TypeScript Logo"> TypeScript</span> <span class="experience-level">Basic</span></li>
+                    <li><span class="skill-name"><img src="mui.png" alt="Material UI Logo"> Material UI</span> <span class="experience-level">Intermediate</span></li>
+                </ul>
+            </div>
+            
+            <div class="experience-category">
+                <h3>Backend Development</h3>
+                <ul class="experience-list">
+                    <li><span class="skill-name">PostgreSQL</span> <span class="experience-level">Basic</span></li>
+                    <li><span class="skill-name">Node JS</span> <span class="experience-level">Intermediate</span></li>
+                    <li><span class="skill-name">Express JS</span> <span class="experience-level">Intermediate</span></li>
+                    <li><span class="skill-name">Git</span> <span class="experience-level">Intermediate</span></li>
+                </ul>
+            </div>
+        </div>
 
-/* Tambahan untuk menempatkan "About" dan "Contact" di bawah judul */
-.my-experience {
-    margin-top: 20px;
-}
+        <!-- Sertifikasi Section -->
+        <div class="certification-section">
+            <h2>Sertifikasi</h2>
+            <p>Academy Google Development</p>
+            <img src="sertifikat.jpg" alt="Sertifikat Google Development">
+            
+            <!-- Sertifikat Coursera Data Science -->
+            <p>Coursera Data Science</p>
+            <img src="sertifikat2.jpg" alt="Sertifikat Coursera Data Science">
+        </div>
 
-.my-experience nav {
-    display: flex;
-    justify-content: flex-start;
-    gap: 15px;
-    margin-bottom: 20px;
-}
+        <!-- Footer -->
+        <footer class="footer">
+            <p>@Rizkyfrostreserved</p>
+        </footer>
 
-.my-experience nav a {
-    color: #f5c518; /* Warna kuning */
-    text-decoration: none;
-}
+    </div>
 
-.my-experience nav a:hover {
-    color: #ffffff; /* Warna hover putih */
-}
-
-.hero {
-    background-color: #f5c518;
-    padding: 40px;
-    text-align: center;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.hero img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
-.hero h2 {
-    font-size: 36px;
-    margin: 20px 0;
-    color: #1e1e1e;
-}
-
-.typing-effect {
-    border-right: .15em solid #1e1e1e;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0;
-    animation: typing 3.5s steps(30, end) forwards, blink-caret .75s step-end infinite;
-}
-
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: #1e1e1e; }
-}
-
-.hero p {
-    font-size: 18px;
-    color: #333333;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #333333;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-.footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333333;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-.footer p {
-    margin: 0;
-    font-size: 14px;
-}
-
-.experience-section {
-    background-color: #f5c518;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.experience-section h2 {
-    color: #1e1e1e;
-    margin-bottom: 20px;
-}
-
-.experience-category h3 {
-    color: #1e1e1e;
-    margin-bottom: 10px;
-}
-
-.experience-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.experience-list li {
-    background-color: #333333;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.skill-name {
-    color: #f5c518;
-}
-
-.skill-name img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-.experience-level {
-    float: right;
-}
-
-.certification-section {
-    background-color: #2d3c4d;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.certification-section h2 {
-    color: #f5c518;
-    margin-bottom: 20px;
-}
-
-.certification-section p {
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.certification-section img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .header h1 {
-        margin-bottom: 10px;
-    }
-
-    .header nav a {
-        margin-left: 0;
-        margin-right: 20px;
-        font-size: 16px;
-    }
-
-    .hero {
-        padding: 20px;
-    }
-
-    .hero h2 {
-        font-size: 28px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
-
-    .cta-button {
-        font-size: 16px;
-    }
-
-    .experience-section {
-        padding: 10px;
-    }
-
-    .experience-category h3 {
-        font-size: 18px;
-    }
-
-    .experience-list li {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header nav a {
-        font-size: 14px;
-    }
-
-    .hero h2 {
-        font-size: 24px;
-    }
-
-    .hero p {
-        font-size: 14px;
-    }
-
-    .cta-button {
+</body>
+</html>
